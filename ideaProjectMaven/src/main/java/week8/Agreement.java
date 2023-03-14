@@ -6,7 +6,5 @@ import lombok.*;
 @Setter
 @ToString(of = {""})
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 public abstract class Agreement {
-}
+   }

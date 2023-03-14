@@ -6,7 +6,6 @@ import lombok.*;
 @Setter
 @ToString(of = {""})
 @NoArgsConstructor
-@AllArgsConstructor
 @Builder
-public class RealtyAmendmentOperation extends Operation<RealtyAgreement> {
+public class Number {
 }

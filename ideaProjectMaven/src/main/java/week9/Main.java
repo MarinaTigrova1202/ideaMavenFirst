@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Main {
 
+    public static String errorMessage;
+
     public static void main(String[] args) {
         String enteredNumber = getUserNumber();
         int verificatedNumber = verificatedNumber(enteredNumber);
@@ -35,6 +37,7 @@ public class Main {
             throw new RuntimeException(errorMessage);
         }
     }
+
 
     public static int countedNumber(int useNumber) {
         int n = useNumber;
