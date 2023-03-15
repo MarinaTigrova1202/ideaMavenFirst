@@ -12,7 +12,7 @@ public class AnnotationTest {
     public void checkOne() {
         int result = Main.countedNumber(1);
         assertThat(Main.countedNumber(1))
-                .isEqualTo(result);
+                .isEqualTo(1);
     }
 
     @Test
@@ -20,15 +20,15 @@ public class AnnotationTest {
     public void checkTen() {
         int result = Main.countedNumber(10);
         assertThat(Main.countedNumber(10))
-                .isEqualTo(result);
+                .isEqualTo(55);
     }
 
     @Test
-    @DisplayName("Проверка максимального(очень большого) значения 999")
+    @DisplayName("Проверка максимального(очень большого) значения 9999")
     public void checkMany() {
-        int result = Main.countedNumber(999);
-        assertThat(Main.countedNumber(999))
-                .isEqualTo(result);
+        int result = Main.countedNumber(9999);
+        assertThat(Main.countedNumber(9999))
+                .isEqualTo(49995000);
     }
 
     @Test

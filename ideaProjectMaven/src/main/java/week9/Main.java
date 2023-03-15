@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static String errorMessage;
+    public static final String errorMessage = "Некорректное число";
 
     public static void main(String[] args) {
         String enteredNumber = getUserNumber();
@@ -24,7 +24,7 @@ public class Main {
     }
 
     public static int verificatedNumber(String userNumberString) {
-        String errorMessage = "Некорректное число";
+        //   String errorMessage = "Некорректное число";
 
         try {
             int userNumber = Integer.parseInt(userNumberString);
@@ -39,13 +39,12 @@ public class Main {
     }
 
 
-    public static int countedNumber(int useNumber) {
-        int n = useNumber;
+    public static int countedNumber(int userNumber) {
         int sum = 0;
 
         for (
                 int i = 1;
-                i <= n; i++) {
+                i <= userNumber; i++) {
             sum = sum + i;
         }
         return sum;
