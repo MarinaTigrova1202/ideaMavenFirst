@@ -24,7 +24,6 @@ public class Main {
     }
 
     public static int verificatedNumber(String userNumberString) {
-        //   String errorMessage = "Некорректное число";
 
         try {
             int userNumber = Integer.parseInt(userNumberString);
